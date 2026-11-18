@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Information Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <div class="logo">
+            <h1>Applus+</h1>
+            <span>RESCOLL</span>
+        </div>
+
+        <div class="title">
+            <h2>Formulaire d'information matière</h2>
+            <h3>Material Information Form</h3>
+        </div>
+
+    </header>
+	
+	
+	<div class="quote-box">
+
+		<span class="quote-label">
+			Référence devis
+		</span>
+
+		<span id="devisReference" class="quote-value">
+			Non renseignée
+		</span>
+
+	</div>
+
+    <section class="card">
+
+        <h3>
+            Suivis des échantillons après essais
+        </h3>
+
+        <div class="checkbox-list">
+
+            <label>
+                <input type="checkbox">
+                Renvoyés par APPLUS+ RESCOLL
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Mis à disposition du client
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Détruits
+            </label>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h3>Délai souhaité</h3>
+
+        <input type="date" class="date-field">
+
+    </section>
+
+    <section class="card">
+
+        <h3>Exigences particulières</h3>
+
+        <textarea
+            class="text-field large"
+            placeholder="Décrire toute exigence particulière..."
+        ></textarea>
+
+    </section>
+
+    <section class="card">
+
+        <h3>Valeur déclarée des produits confiés (€)</h3>
+
+        <input
+            type="text"
+            class="text-field"
+            placeholder="Exemple : 5000 €">
+
+        <p class="note">
+            En cas de réclamation sur la perte ou les dommages,
+            seule la valeur déclarée sera prise en compte.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h3>Echantillons</h3>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Référence</th>
+                    <th>Qté</th>
+                    <th>Nature</th>
+                </tr>
+            </thead>
+
+            <tbody id="sampleTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <section class="bottom-grid">
+
+        <div class="card">
+
+            <h3>Remarques particulières</h3>
+
+            <textarea
+                class="text-field large"
+                placeholder="Commentaires..."
+            ></textarea>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Fournir FDS si possible</h3>
+
+            <textarea
+                class="text-field large"
+                placeholder="Informations sécurité..."
+            ></textarea>
+
+        </div>
+
+    </section>
+
+    <div class="submit-area">
+
+        <button id="submitBtn">
+            Envoyer les informations
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
